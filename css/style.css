@@ -22,7 +22,7 @@ body {
   color: var(--txt-color);
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2.5rem;
 }
 
 .burger-icon {
@@ -57,7 +57,6 @@ body {
 .logo {
   font-family: "Qwitcher Grypen", cursive;
   font-size: 42px;
-  padding-left: 50px;
 }
 
 .menu {
@@ -94,6 +93,10 @@ body {
 }
 
 @media screen and (max-width: 990px) {
+  .logo {
+    padding-left: 50px;
+  }
+
   .burger-icon {
     display: flex;
   }
