@@ -2,7 +2,7 @@
 
 :root {
   --bg-color: #f7efeb;
-  --border-color: #434040;
+  --border-color: #c8c8c8;
   --txt-color: #3c3b3b;
 }
 
@@ -17,11 +17,23 @@ body {
 
 /* General Styles */
 .btn {
+  text-decoration: none;
   border: none;
   border-radius: 5px;
   padding: 10px;
   text-transform: capitalize;
   cursor: pointer;
+  color: inherit;
+  background-color: var(--bg-color);
+}
+.btn.btn-add {
+  background-color: green;
+  color: #fff;
+}
+
+.container {
+  width: 60%;
+  margin: 1rem auto;
 }
 
 /* Nav Menu */
@@ -223,4 +235,68 @@ body {
 .product-price {
   margin: 10px;
   color: green;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-color);
+  margin-top: 2rem;
+}
+
+.footer__blocks-wrapper {
+  display: flex;
+  gap: 4rem;
+  padding: 4rem;
+  justify-content: center;
+  color: var(--txt-color);
+  font-weight: 300;
+}
+
+.footer__list-social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.footer .icon {
+  height: 20px;
+}
+
+.footer__content-bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-block__list {
+  font-size: 14px;
+}
+
+.footer-block__list li {
+  padding: 5px 0;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.copyright__content {
+  color: var(--txt-color);
+  font-size: 12px;
 }
