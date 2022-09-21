@@ -32,8 +32,12 @@ body {
 }
 
 .container {
+  display: flex;
   width: 60%;
   margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
 }
 
 /* Nav Menu */
@@ -241,6 +245,7 @@ body {
 .container.product-page {
   display: flex;
   align-items: center;
+  height: 80vh;
 }
 
 .product-page img {
@@ -266,7 +271,16 @@ body {
 }
 
 .product-desc span {
-  padding: 15px;
+  padding: 15px 0;
+}
+
+/* Order Page */
+
+.order-placed {
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  font-weight: 300;
 }
 
 /* Footer */
